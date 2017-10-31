@@ -3,6 +3,11 @@
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
+!gulpfile.js
+!package.json
+!npm-debug.log
+!settings.js
+!webpack.config.js
 
 # ignore all files starting with .
 .*
@@ -20,7 +25,7 @@ Thumbs.db
 *.komodoproject
 
 # ignore log files and databases
-*.log
+// *.log
 // *.sql
 *.sqlite
 
