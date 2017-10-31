@@ -572,4 +572,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'Rafa',	'$P$BK2iKXYiYQCztcZHaWfLkUNoxb.U5A1',	'rafa',	'it@engisa.com',	'',	'2017-10-28 09:58:06',	'',	0,	'Rafa');
 
--- 2017-10-31 10:56:56
+-- 2017-10-31 12:24:03
