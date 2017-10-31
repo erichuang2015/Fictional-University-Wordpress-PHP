@@ -216,7 +216,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (210,	'nav_menu_options',	'a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}',	'yes'),
 (217,	'_site_transient_timeout_theme_roots',	'1509447369',	'no'),
 (218,	'_site_transient_theme_roots',	'a:1:{s:26:\"fictional-university-theme\";s:7:\"/themes\";}',	'no'),
-(221,	'category_children',	'a:0:{}',	'yes');
+(233,	'category_children',	'a:0:{}',	'yes');
 
 DROP TABLE IF EXISTS `wp_postmeta`;
 CREATE TABLE `wp_postmeta` (
@@ -517,7 +517,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (2,	2,	'nav_menu',	'',	0,	2),
 (3,	3,	'nav_menu',	'',	0,	2),
 (4,	4,	'nav_menu',	'',	0,	2),
-(5,	5,	'category',	'',	0,	1);
+(5,	5,	'category',	'We love to blog about our awards',	0,	1);
 
 DROP TABLE IF EXISTS `wp_usermeta`;
 CREATE TABLE `wp_usermeta` (
@@ -534,7 +534,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (1,	1,	'nickname',	'Rafa'),
 (2,	1,	'first_name',	''),
 (3,	1,	'last_name',	''),
-(4,	1,	'description',	''),
+(4,	1,	'description',	'Wordpress developer'),
 (5,	1,	'rich_editing',	'true'),
 (6,	1,	'comment_shortcuts',	'false'),
 (7,	1,	'admin_color',	'fresh'),
@@ -572,4 +572,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'Rafa',	'$P$BK2iKXYiYQCztcZHaWfLkUNoxb.U5A1',	'rafa',	'it@engisa.com',	'',	'2017-10-28 09:58:06',	'',	0,	'Rafa');
 
--- 2017-10-31 12:24:03
+-- 2017-10-31 13:22:50
