@@ -380,7 +380,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (153,	39,	'_edit_last',	'1'),
 (154,	39,	'_edit_lock',	'1509494329:1'),
 (155,	41,	'_edit_last',	'1'),
-(156,	41,	'_edit_lock',	'1509530580:1'),
+(156,	41,	'_edit_lock',	'1509532189:1'),
 (157,	42,	'_edit_last',	'1'),
 (158,	42,	'_edit_lock',	'1509530380:1'),
 (159,	43,	'_edit_last',	'1'),
@@ -400,7 +400,13 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (173,	42,	'event_date',	'20171222'),
 (174,	42,	'_event_date',	'field_59f98d068ef0e'),
 (175,	41,	'event_date',	'20160127'),
-(176,	41,	'_event_date',	'field_59f98d068ef0e');
+(176,	41,	'_event_date',	'field_59f98d068ef0e'),
+(177,	48,	'_edit_last',	'1'),
+(178,	48,	'_edit_lock',	'1509532356:1'),
+(179,	49,	'_edit_last',	'1'),
+(180,	49,	'_edit_lock',	'1509533636:1'),
+(181,	49,	'event_date',	'20171231'),
+(182,	49,	'_event_date',	'field_59f98d068ef0e');
 
 DROP TABLE IF EXISTS `wp_posts`;
 CREATE TABLE `wp_posts` (
@@ -481,7 +487,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (44,	1,	'2017-10-31 19:56:16',	'0000-00-00 00:00:00',	'',	'Auto Draft',	'',	'auto-draft',	'closed',	'closed',	'',	'',	'',	'',	'2017-10-31 19:56:16',	'0000-00-00 00:00:00',	'',	0,	'http://fictional-university.dev/?post_type=event&p=44',	0,	'event',	'',	0),
 (45,	1,	'2017-10-31 19:56:56',	'0000-00-00 00:00:00',	'',	'Auto Draft',	'',	'auto-draft',	'closed',	'closed',	'',	'',	'',	'',	'2017-10-31 19:56:56',	'0000-00-00 00:00:00',	'',	0,	'http://fictional-university.dev/?post_type=event&p=45',	0,	'event',	'',	0),
 (46,	1,	'2017-10-31 23:56:07',	'2017-10-31 23:56:07',	'We won an award content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum fringilla nibh sed hendrerit. Aliquam at eleifend ipsum, non lobortis nibh. Nunc lorem quam, porta eu consequat eu, laoreet eu nulla. Donec dapibus sagittis neque, a placerat nisi molestie at. Mauris vel accumsan nibh. Aenean ut ipsum urna. Sed eu tincidunt turpis, eget laoreet sapien. Suspendisse ex arcu, tincidunt ut justo et, mollis lobortis augue. Donec aliquam ac nulla non laoreet. Phasellus a varius diam. Pellentesque dictum et nisl nec lobortis. Duis mattis velit eros, sit amet volutpat nunc volutpat et.',	'We won an award',	'Our school has won another award this year',	'inherit',	'closed',	'closed',	'',	'39-revision-v1',	'',	'',	'2017-10-31 23:56:07',	'2017-10-31 23:56:07',	'',	39,	'http://fictional-university.dev/2017/10/31/39-revision-v1/',	0,	'revision',	'',	0),
-(47,	1,	'2017-11-01 08:53:18',	'2017-11-01 08:53:18',	'',	'Event Date',	'',	'publish',	'closed',	'closed',	'',	'acf_event-date',	'',	'',	'2017-11-01 08:53:18',	'2017-11-01 08:53:18',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=47',	0,	'acf',	'',	0);
+(47,	1,	'2017-11-01 08:53:18',	'2017-11-01 08:53:18',	'',	'Event Date',	'',	'publish',	'closed',	'closed',	'',	'acf_event-date',	'',	'',	'2017-11-01 08:53:18',	'2017-11-01 08:53:18',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=47',	0,	'acf',	'',	0),
+(48,	1,	'2017-11-01 10:32:36',	'0000-00-00 00:00:00',	'',	'Winter Study Night',	'',	'draft',	'open',	'open',	'',	'',	'',	'',	'2017-11-01 10:32:36',	'2017-11-01 10:32:36',	'',	0,	'http://fictional-university.dev/?p=48',	0,	'post',	'',	0),
+(49,	1,	'2017-11-01 10:53:56',	'2017-11-01 10:53:56',	'Winter study night content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'Winter Study Night',	'',	'publish',	'closed',	'closed',	'',	'winter-study-night',	'',	'',	'2017-11-01 10:53:56',	'2017-11-01 10:53:56',	'',	0,	'http://fictional-university.dev/?post_type=event&#038;p=49',	0,	'event',	'',	0);
 
 DROP TABLE IF EXISTS `wp_termmeta`;
 CREATE TABLE `wp_termmeta` (
@@ -532,7 +540,8 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (32,	3,	0),
 (33,	4,	0),
 (34,	4,	0),
-(39,	5,	0);
+(39,	5,	0),
+(48,	1,	0);
 
 DROP TABLE IF EXISTS `wp_term_taxonomy`;
 CREATE TABLE `wp_term_taxonomy` (
@@ -609,4 +618,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'Rafa',	'$P$BK2iKXYiYQCztcZHaWfLkUNoxb.U5A1',	'rafa',	'it@engisa.com',	'',	'2017-10-28 09:58:06',	'',	0,	'Rafa');
 
--- 2017-11-01 10:11:12
+-- 2017-11-01 10:55:53
