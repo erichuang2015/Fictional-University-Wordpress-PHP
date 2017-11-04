@@ -36,7 +36,7 @@ gulp.task('watch', function() {
   });
 
   gulp.watch('./**/*.php', function() {
-    browserSync.reload();
+    browserSync.reload({stream: true});
   });
   gulp.watch(settings.themeLocation + 'css/**/*.css', ['waitForStyles']);
   gulp.watch([settings.themeLocation + 'js/modules/*.js', settings.themeLocation + 'js/scripts.js'], ['waitForScripts']);
@@ -48,5 +48,5 @@ gulp.task('waitForStyles', ['styles'], function() {
 });
 
 gulp.task('waitForScripts', ['scripts'], function() {
-  browserSync.reload();
+  browserSync.reload({stream: true});
 });
