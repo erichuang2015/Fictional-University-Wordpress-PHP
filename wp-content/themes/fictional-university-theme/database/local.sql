@@ -415,7 +415,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (187,	52,	'event_date',	'20151231'),
 (188,	52,	'_event_date',	'field_59f98d068ef0e'),
 (189,	53,	'_edit_last',	'1'),
-(190,	53,	'_edit_lock',	'1509542725:1'),
+(190,	53,	'_edit_lock',	'1509800547:1'),
 (191,	54,	'_edit_last',	'1'),
 (192,	54,	'_edit_lock',	'1509571597:1'),
 (193,	55,	'_edit_last',	'1'),
@@ -512,11 +512,24 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (285,	74,	'position',	'normal'),
 (286,	74,	'layout',	'no_box'),
 (287,	74,	'hide_on_screen',	''),
-(288,	74,	'_edit_lock',	'1509794879:1'),
+(288,	74,	'_edit_lock',	'1509800284:1'),
 (289,	72,	'map_location',	'a:3:{s:7:\"address\";s:39:\"163W W 79th St, New York, NY 10024, USA\";s:3:\"lat\";s:17:\"40.78291361392196\";s:3:\"lng\";s:18:\"-73.97751331329346\";}'),
 (290,	72,	'_map_location',	'field_59fc522f805de'),
 (291,	73,	'map_location',	'a:3:{s:7:\"address\";s:46:\"50 85th St Transverse, New York, NY 10128, USA\";s:3:\"lat\";s:18:\"40.782028117514464\";s:3:\"lng\";s:18:\"-73.96317958831787\";}'),
-(292,	73,	'_map_location',	'field_59fc522f805de');
+(292,	73,	'_map_location',	'field_59fc522f805de'),
+(293,	75,	'_edit_last',	'1'),
+(294,	75,	'field_59fdbbd577406',	'a:14:{s:3:\"key\";s:19:\"field_59fdbbd577406\";s:5:\"label\";s:18:\"Related Campus(es)\";s:4:\"name\";s:14:\"related_campus\";s:4:\"type\";s:12:\"relationship\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";s:1:\"0\";s:13:\"return_format\";s:6:\"object\";s:9:\"post_type\";a:1:{i:0;s:6:\"campus\";}s:8:\"taxonomy\";a:1:{i:0;s:3:\"all\";}s:7:\"filters\";a:1:{i:0;s:6:\"search\";}s:15:\"result_elements\";a:1:{i:0;s:9:\"post_type\";}s:3:\"max\";s:0:\"\";s:17:\"conditional_logic\";a:3:{s:6:\"status\";s:1:\"0\";s:5:\"rules\";a:1:{i:0;a:2:{s:5:\"field\";s:4:\"null\";s:8:\"operator\";s:2:\"==\";}}s:8:\"allorany\";s:3:\"all\";}s:8:\"order_no\";i:0;}'),
+(295,	75,	'rule',	'a:5:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:7:\"program\";s:8:\"order_no\";i:0;s:8:\"group_no\";i:0;}'),
+(296,	75,	'position',	'normal'),
+(297,	75,	'layout',	'no_box'),
+(298,	75,	'hide_on_screen',	''),
+(299,	75,	'_edit_lock',	'1509800379:1'),
+(300,	53,	'page_banner_subtitle',	''),
+(301,	53,	'_page_banner_subtitle',	'field_59fba0aec13d4'),
+(302,	53,	'page_banner_background_image',	''),
+(303,	53,	'_page_banner_background_image',	'field_59fba0c1c13d5'),
+(304,	53,	'related_campus',	'a:1:{i:0;s:2:\"72\";}'),
+(305,	53,	'_related_campus',	'field_59fdbbd577406');
 
 DROP TABLE IF EXISTS `wp_posts`;
 CREATE TABLE `wp_posts` (
@@ -602,7 +615,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (50,	1,	'2017-11-01 12:21:38',	'2017-11-01 12:21:38',	'',	'Past Events',	'',	'publish',	'closed',	'closed',	'',	'past-events',	'',	'',	'2017-11-01 12:21:38',	'2017-11-01 12:21:38',	'',	0,	'http://fictional-university.dev/?page_id=50',	0,	'page',	'',	0),
 (51,	1,	'2017-11-01 12:21:38',	'2017-11-01 12:21:38',	'',	'Past Events',	'',	'inherit',	'closed',	'closed',	'',	'50-revision-v1',	'',	'',	'2017-11-01 12:21:38',	'2017-11-01 12:21:38',	'',	50,	'http://fictional-university.dev/2017/11/01/50-revision-v1/',	0,	'revision',	'',	0),
 (52,	1,	'2017-11-01 12:29:40',	'2017-11-01 12:29:40',	'New Year 2016 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'New Year 2016',	'',	'publish',	'closed',	'closed',	'',	'new-year-2016',	'',	'',	'2017-11-01 12:29:53',	'2017-11-01 12:29:53',	'',	0,	'http://fictional-university.dev/?post_type=event&#038;p=52',	0,	'event',	'',	0),
-(53,	1,	'2017-11-01 13:27:42',	'2017-11-01 13:27:42',	'Math content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'Math',	'',	'publish',	'closed',	'closed',	'',	'math',	'',	'',	'2017-11-01 13:27:42',	'2017-11-01 13:27:42',	'',	0,	'http://fictional-university.dev/?post_type=program&#038;p=53',	0,	'program',	'',	0),
+(53,	1,	'2017-11-01 13:27:42',	'2017-11-01 13:27:42',	'Math content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'Math',	'',	'publish',	'closed',	'closed',	'',	'math',	'',	'',	'2017-11-04 13:02:27',	'2017-11-04 13:02:27',	'',	0,	'http://fictional-university.dev/?post_type=program&#038;p=53',	0,	'program',	'',	0),
 (54,	1,	'2017-11-01 13:28:01',	'2017-11-01 13:28:01',	'Biology content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'Biology',	'',	'publish',	'closed',	'closed',	'',	'biology',	'',	'',	'2017-11-01 13:28:01',	'2017-11-01 13:28:01',	'',	0,	'http://fictional-university.dev/?post_type=program&#038;p=54',	0,	'program',	'',	0),
 (55,	1,	'2017-11-01 13:28:16',	'2017-11-01 13:28:16',	'English content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.',	'English',	'',	'publish',	'closed',	'closed',	'',	'english',	'',	'',	'2017-11-01 13:28:16',	'2017-11-01 13:28:16',	'',	0,	'http://fictional-university.dev/?post_type=program&#038;p=55',	0,	'program',	'',	0),
 (56,	1,	'2017-11-01 14:27:18',	'2017-11-01 14:27:18',	'',	'Related Program',	'',	'publish',	'closed',	'closed',	'',	'acf_related-program',	'',	'',	'2017-11-02 10:39:11',	'2017-11-02 10:39:11',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=56',	0,	'acf',	'',	0),
@@ -622,7 +635,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (71,	1,	'2017-11-03 08:07:21',	'2017-11-03 08:07:21',	'',	'notebook',	'',	'inherit',	'open',	'closed',	'',	'notebook',	'',	'',	'2017-11-03 08:07:21',	'2017-11-03 08:07:21',	'',	43,	'http://fictional-university.dev/wp-content/uploads/2017/10/notebook.jpg',	0,	'attachment',	'image/jpeg',	0),
 (72,	1,	'2017-11-03 10:53:36',	'2017-11-03 10:53:36',	'Downtown West content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non vehicula diam. Pellentesque bibendum lorem sapien, id rhoncus ipsum ornare sit amet. Vestibulum lacinia ante urna, vitae faucibus orci eleifend quis. Nunc dapibus est sit amet felis laoreet, vel egestas magna feugiat. Donec vel vehicula massa. Nulla et luctus mi. Integer urna dolor, faucibus non feugiat at, molestie ac nulla. Ut lacinia pharetra ipsum, a vehicula tortor interdum sed. Nunc suscipit, libero cursus faucibus pharetra, urna arcu aliquam tortor, a porta mauris est molestie elit. Aliquam id hendrerit sem, at mattis lectus. Proin placerat lacus sit amet risus ullamcorper elementum.',	'Downtown West',	'',	'publish',	'closed',	'closed',	'',	'downtown-west',	'',	'',	'2017-11-03 11:44:31',	'2017-11-03 11:44:31',	'',	0,	'http://fictional-university.dev/?post_type=campus&#038;p=72',	0,	'campus',	'',	0),
 (73,	1,	'2017-11-03 10:54:01',	'2017-11-03 10:54:01',	'Downtown East content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non vehicula diam. Pellentesque bibendum lorem sapien, id rhoncus ipsum ornare sit amet. Vestibulum lacinia ante urna, vitae faucibus orci eleifend quis. Nunc dapibus est sit amet felis laoreet, vel egestas magna feugiat. Donec vel vehicula massa. Nulla et luctus mi. Integer urna dolor, faucibus non feugiat at, molestie ac nulla. Ut lacinia pharetra ipsum, a vehicula tortor interdum sed. Nunc suscipit, libero cursus faucibus pharetra, urna arcu aliquam tortor, a porta mauris est molestie elit. Aliquam id hendrerit sem, at mattis lectus. Proin placerat lacus sit amet risus ullamcorper elementum.',	'Downtown East',	'',	'publish',	'closed',	'closed',	'',	'downtown-east',	'',	'',	'2017-11-03 11:45:28',	'2017-11-03 11:45:28',	'',	0,	'http://fictional-university.dev/?post_type=campus&#038;p=73',	0,	'campus',	'',	0),
-(74,	1,	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	'Map Location',	'',	'publish',	'closed',	'closed',	'',	'acf_map-location',	'',	'',	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=74',	0,	'acf',	'',	0);
+(74,	1,	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	'Map Location',	'',	'publish',	'closed',	'closed',	'',	'acf_map-location',	'',	'',	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=74',	0,	'acf',	'',	0),
+(75,	1,	'2017-11-04 13:01:53',	'2017-11-04 13:01:53',	'',	'Related Campus(es)',	'',	'publish',	'closed',	'closed',	'',	'acf_related-campuses',	'',	'',	'2017-11-04 13:01:53',	'2017-11-04 13:01:53',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=75',	0,	'acf',	'',	0);
 
 DROP TABLE IF EXISTS `wp_termmeta`;
 CREATE TABLE `wp_termmeta` (
@@ -753,4 +767,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'Rafa',	'$P$BK2iKXYiYQCztcZHaWfLkUNoxb.U5A1',	'rafa',	'it@engisa.com',	'',	'2017-10-28 09:58:06',	'',	0,	'Rafa');
 
--- 2017-11-04 11:41:34
+-- 2017-11-04 13:32:14
