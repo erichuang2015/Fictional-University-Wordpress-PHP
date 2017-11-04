@@ -31,6 +31,7 @@ function pageBanner($args = NULL) {
 <?php }
 
 function university_files() {
+	wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyCDjzQH-6nAf1UpX5yF7VFU-lWH3Trg4YY', NULL, '1.0', true);
 	wp_enqueue_script('main-university-js', get_theme_file_uri('/js/scripts-bundled.js'), NULL, '1.0', true);
 	wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -43,7 +44,7 @@ function university_features() {
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails');
 	add_image_size('professorLandscape', 400, 260, true);
-	add_image_size(professorPortrait, 480, 650, true);
+	add_image_size('professorPortrait', 480, 650, true);
 	add_image_size('pageBanner', 1500, 350, true);
 }
 
