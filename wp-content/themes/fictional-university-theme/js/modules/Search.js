@@ -9,6 +9,7 @@ class Search {
         this.searchField = $("#search-term");
         this.events();
         this.isOverlayOpen = false;
+        this.typingTimer;
     }
 
     // 2. events
@@ -22,9 +23,12 @@ class Search {
     // 3. methods (function, action...)
     typingLogic(e) {
         if (e.keyCode !== 27) {
-            console.log("form");
+            clearTimeout(this.typingTimer);
+            this.typingTimer = setTimeout(function () {
+                console.log("this is a timeout test");
+            }, 2000);
         }
-    }
+    };
 
     keyPressDispatcher(e) {
         if (e.keyCode == 83 && !this.isOverlayOpen) {

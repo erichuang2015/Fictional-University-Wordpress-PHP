@@ -10566,6 +10566,7 @@ var Search = function () {
         this.searchField = (0, _jquery2.default)("#search-term");
         this.events();
         this.isOverlayOpen = false;
+        this.typingTimer;
     }
 
     // 2. events
@@ -10586,7 +10587,10 @@ var Search = function () {
         key: "typingLogic",
         value: function typingLogic(e) {
             if (e.keyCode !== 27) {
-                console.log("form");
+                clearTimeout(this.typingTimer);
+                this.typingTimer = setTimeout(function () {
+                    console.log("this is a timeout test");
+                }, 2000);
             }
         }
     }, {
