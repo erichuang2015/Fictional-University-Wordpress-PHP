@@ -10563,6 +10563,7 @@ var Search = function () {
         this.openButton = (0, _jquery2.default)(".js-search-trigger");
         this.closeButton = (0, _jquery2.default)(".search-overlay__close");
         this.searchOverlay = (0, _jquery2.default)(".search-overlay");
+        this.searchField = (0, _jquery2.default)("#search-term");
         this.events();
         this.isOverlayOpen = false;
     }
@@ -10576,10 +10577,18 @@ var Search = function () {
             this.openButton.on("click", this.openOverlay.bind(this));
             this.closeButton.on("click", this.closeOverlay.bind(this));
             (0, _jquery2.default)(document).on("keydown", this.keyPressDispatcher.bind(this));
+            this.searchField.on("keydown", this.typingLogic.bind(this));
         }
 
         // 3. methods (function, action...)
 
+    }, {
+        key: "typingLogic",
+        value: function typingLogic(e) {
+            if (e.keyCode !== 27) {
+                console.log("form");
+            }
+        }
     }, {
         key: "keyPressDispatcher",
         value: function keyPressDispatcher(e) {
