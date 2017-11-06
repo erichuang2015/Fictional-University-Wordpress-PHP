@@ -10639,6 +10639,7 @@ var Search = function () {
 
             this.searchOverlay.addClass("search-overlay--active");
             (0, _jquery2.default)("body").addClass("body-no-scroll");
+            this.searchField.val('');
             setTimeout(function () {
                 return _this2.searchField.focus();
             }, 301);
