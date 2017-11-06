@@ -60,6 +60,8 @@ class Search {
                 ${combinedResults.length ? '</ul>' : '' }
             `);
             this.isSpinnerVisible = false;
+        }, () => {
+            this.resultsDiv.html('Unexpected error, please try again.')
         });
     }
 

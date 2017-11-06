@@ -10620,6 +10620,8 @@ var Search = function () {
                     return "<li><a href=\"item.link\">" + item.title.rendered + "</a></li>";
                 }).join('') + "\n                " + (combinedResults.length ? '</ul>' : '') + "\n            ");
                 _this.isSpinnerVisible = false;
+            }, function () {
+                _this.resultsDiv.html('Unexpected error, please try again.');
             });
         }
     }, {
