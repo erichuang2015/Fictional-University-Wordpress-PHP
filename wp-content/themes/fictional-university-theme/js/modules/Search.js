@@ -34,7 +34,7 @@ class Search {
                         this.resultsDiv.html('<div class="spinner-loader"></div>');
                         this.isSpinnerVisible = true;
                     }
-                    this.typingTimer = setTimeout(this.getResults.bind(this), 2000);
+                    this.typingTimer = setTimeout(this.getResults.bind(this), 1000);
                 } else {
                     this.resultsDiv.html('');
                     this.isSpinnerVisible = false;
@@ -54,6 +54,7 @@ class Search {
                     ${posts.map(item => `<li><a href="item.link">${item.title.rendered}</a></li>`).join('')}
                 ${posts.length ? '</ul>' : '' }
             `);
+            this.isSpinnerVisible = false;
         });
 
     }
