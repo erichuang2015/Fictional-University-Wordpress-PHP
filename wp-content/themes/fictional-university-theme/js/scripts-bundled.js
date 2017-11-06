@@ -10611,8 +10611,12 @@ var Search = function () {
     }, {
         key: "getResults",
         value: function getResults() {
+            var _this = this;
+
             _jquery2.default.getJSON('http://localhost:3000/wp-json/wp/v2/posts?search=' + this.searchField.val(), function (posts) {
-                alert(posts[0].title.rendered);
+                _this.resultsDiv.html("\n                <h2 class=\"search-overlay__section-title\">General Information</h2>\n                <ul class=\"link-list min-list\">\n                    " + posts.map(function (item) {
+                    return "<li><a href=\"item.link\">" + item.title.rendered + "</a></li>";
+                }).join('') + "\n                </ul>\n            ");
             });
         }
     }, {
