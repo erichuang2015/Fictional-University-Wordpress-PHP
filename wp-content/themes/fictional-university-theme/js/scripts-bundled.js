@@ -10599,7 +10599,7 @@ var Search = function () {
                             this.resultsDiv.html('<div class="spinner-loader"></div>');
                             this.isSpinnerVisible = true;
                         }
-                        this.typingTimer = setTimeout(this.getResults.bind(this), 1000);
+                        this.typingTimer = setTimeout(this.getResults.bind(this), 750);
                     } else {
                         this.resultsDiv.html('');
                         this.isSpinnerVisible = false;
@@ -10635,8 +10635,13 @@ var Search = function () {
     }, {
         key: "openOverlay",
         value: function openOverlay() {
+            var _this2 = this;
+
             this.searchOverlay.addClass("search-overlay--active");
             (0, _jquery2.default)("body").addClass("body-no-scroll");
+            setTimeout(function () {
+                return _this2.searchField.focus();
+            }, 301);
             console.log("Our open method just ran!");
             this.isOverlayOpen = true;
         }
