@@ -10629,47 +10629,6 @@ var Search = function () {
                 _this.isSpinnerVisible = false;
             });
         }
-
-        // <div class="one-third">
-        //     <h2 class="search-overlay__section-title">Programs</h2>
-        //      ${results.program.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search</p>'}
-        //         ${results.program.map(item => `<li><a href="item.link">${item.title.rendered}</a> ${item.type == 'post' ? ` by ${item.authorName}` : ''}</li>`).join('')}
-        //     ${results.program.length ? '</ul>' : '' }
-        //     <h2 class="search-overlay__section-title">Professors</h2>
-        //     ${results.professor.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search</p>'}
-        //         ${results.professor.map(item => `<li><a href="item.link">${item.title.rendered}</a> ${item.type == 'post' ? ` by ${item.authorName}` : ''}</li>`).join('')}
-        //     ${results.professor.length ? '</ul>' : '' }
-        // </div>
-        // <div class="one-third">
-        //     <h2 class="search-overlay__section-title">Campuses</h2>
-        //     ${results.campus.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search</p>'}
-        //         ${results.campus.map(item => `<li><a href="item.link">${item.title.rendered}</a> ${item.type == 'post' ? ` by ${item.authorName}` : ''}</li>`).join('')}
-        //     ${results.campus.length ? '</ul>' : '' }
-        //     <h2 class="search-overlay__section-title">Events</h2>
-        //     ${results.event.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search</p>'}
-        //         ${results.event.map(item => `<li><a href="item.link">${item.title.rendered}</a> ${item.type == 'post' ? ` by ${item.authorName}` : ''}</li>`).join('')}
-        //     ${results.event.length ? '</ul>' : '' }
-        // </div>
-
-
-        //Delete this code a bit later on
-        // $.when(
-        //     $.getJSON(universityData.root_url + '/wp-json/wp/v2/posts?search=' + this.searchField.val()),
-        //     $.getJSON(universityData.root_url + '/wp-json/wp/v2/pages?search=' + this.searchField.val())
-        // ).then((posts, pages) => {
-        //     var combinedResults = posts[0].concat(pages[0]);
-        //     this.resultsDiv.html(`
-        //         <h2 class="search-overlay__section-title">General Information</h2>
-        //         ${combinedResults.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search</p>'}
-        //             ${combinedResults.map(item => `<li><a href="item.link">${item.title.rendered}</a> ${item.type == 'post' ? ` by ${item.authorName}` : ''}</li>`).join('')}
-        //         ${combinedResults.length ? '</ul>' : '' }
-        //     `);
-        //     this.isSpinnerVisible = false;
-        // }, () => {
-        //     this.resultsDiv.html('Unexpected error, please try again.')
-        // });
-
-
     }, {
         key: "keyPressDispatcher",
         value: function keyPressDispatcher(e) {
@@ -10694,6 +10653,7 @@ var Search = function () {
             }, 301);
             console.log("Our open method just ran!");
             this.isOverlayOpen = true;
+            return false;
         }
     }, {
         key: "closeOverlay",

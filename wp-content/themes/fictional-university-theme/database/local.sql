@@ -417,7 +417,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (187,	52,	'event_date',	'20151231'),
 (188,	52,	'_event_date',	'field_59f98d068ef0e'),
 (189,	53,	'_edit_last',	'1'),
-(190,	53,	'_edit_lock',	'1510257736:1'),
+(190,	53,	'_edit_lock',	'1510304343:1'),
 (191,	54,	'_edit_last',	'1'),
 (192,	54,	'_edit_lock',	'1510257499:1'),
 (193,	55,	'_edit_last',	'1'),
@@ -546,7 +546,17 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (317,	77,	'hide_on_screen',	''),
 (318,	77,	'_edit_lock',	'1510250616:1'),
 (319,	54,	'main_body_content',	'The biology program works closely with the math program.\r\n\r\nBiology content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper vel purus nec malesuada. Suspendisse volutpat leo purus, sed cursus lorem pharetra in. Pellentesque tincidunt accumsan venenatis. Fusce id venenatis arcu, ac commodo arcu. Nullam quis metus sed lectus sagittis sodales nec tincidunt orci. Curabitur vel enim dui. Maecenas iaculis magna vel nibh efficitur, vel eleifend justo fermentum.'),
-(320,	54,	'_main_body_content',	'field_5a049d26e4587');
+(320,	54,	'_main_body_content',	'field_5a049d26e4587'),
+(321,	78,	'_edit_last',	'1'),
+(322,	79,	'page_banner_subtitle',	''),
+(323,	79,	'_page_banner_subtitle',	'field_59fba0aec13d4'),
+(324,	79,	'page_banner_background_image',	''),
+(325,	79,	'_page_banner_background_image',	'field_59fba0c1c13d5'),
+(326,	78,	'page_banner_subtitle',	''),
+(327,	78,	'_page_banner_subtitle',	'field_59fba0aec13d4'),
+(328,	78,	'page_banner_background_image',	''),
+(329,	78,	'_page_banner_background_image',	'field_59fba0c1c13d5'),
+(330,	78,	'_edit_lock',	'1510304504:1');
 
 DROP TABLE IF EXISTS `wp_posts`;
 CREATE TABLE `wp_posts` (
@@ -652,7 +662,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (74,	1,	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	'Map Location',	'',	'publish',	'closed',	'closed',	'',	'acf_map-location',	'',	'',	'2017-11-03 11:26:18',	'2017-11-03 11:26:18',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=74',	0,	'acf',	'',	0),
 (75,	1,	'2017-11-04 13:01:53',	'2017-11-04 13:01:53',	'',	'Related Campus(es)',	'',	'publish',	'closed',	'closed',	'',	'acf_related-campuses',	'',	'',	'2017-11-04 13:01:53',	'2017-11-04 13:01:53',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=75',	0,	'acf',	'',	0),
 (76,	1,	'2017-11-05 21:53:54',	'0000-00-00 00:00:00',	'',	'Auto Draft',	'',	'auto-draft',	'open',	'open',	'',	'',	'',	'',	'2017-11-05 21:53:54',	'0000-00-00 00:00:00',	'',	0,	'http://fictional-university.dev/?p=76',	0,	'post',	'',	0),
-(77,	1,	'2017-11-09 18:05:47',	'2017-11-09 18:05:47',	'',	'Main Body Content',	'',	'publish',	'closed',	'closed',	'',	'acf_main-body-content',	'',	'',	'2017-11-09 18:05:47',	'2017-11-09 18:05:47',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=77',	0,	'acf',	'',	0);
+(77,	1,	'2017-11-09 18:05:47',	'2017-11-09 18:05:47',	'',	'Main Body Content',	'',	'publish',	'closed',	'closed',	'',	'acf_main-body-content',	'',	'',	'2017-11-09 18:05:47',	'2017-11-09 18:05:47',	'',	0,	'http://fictional-university.dev/?post_type=acf&#038;p=77',	0,	'acf',	'',	0),
+(78,	1,	'2017-11-10 09:01:44',	'2017-11-10 09:01:44',	'',	'Search',	'',	'publish',	'closed',	'closed',	'',	'search',	'',	'',	'2017-11-10 09:01:44',	'2017-11-10 09:01:44',	'',	0,	'http://fictional-university.dev/?page_id=78',	0,	'page',	'',	0),
+(79,	1,	'2017-11-10 09:01:44',	'2017-11-10 09:01:44',	'',	'Search',	'',	'inherit',	'closed',	'closed',	'',	'78-revision-v1',	'',	'',	'2017-11-10 09:01:44',	'2017-11-10 09:01:44',	'',	78,	'http://fictional-university.dev/2017/11/10/78-revision-v1/',	0,	'revision',	'',	0);
 
 DROP TABLE IF EXISTS `wp_termmeta`;
 CREATE TABLE `wp_termmeta` (
@@ -783,4 +795,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'Rafa',	'$P$BK2iKXYiYQCztcZHaWfLkUNoxb.U5A1',	'rafa',	'it@engisa.com',	'',	'2017-10-28 09:58:06',	'',	0,	'Rafa');
 
--- 2017-11-10 08:55:41
+-- 2017-11-10 09:32:09
