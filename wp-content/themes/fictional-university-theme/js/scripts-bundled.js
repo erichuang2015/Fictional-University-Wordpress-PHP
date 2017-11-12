@@ -10566,6 +10566,7 @@ var MyNotes = function () {
         key: "events",
         value: function events() {
             (0, _jquery2.default)(".delete-note").on("click", this.deleteNote);
+            (0, _jquery2.default)(".edit-note").on("click", this.editNote);
         }
 
         // Methods will go here
@@ -10591,6 +10592,13 @@ var MyNotes = function () {
                     console.log(response);
                 }
             });
+        }
+    }, {
+        key: "editNote",
+        value: function editNote(e) {
+            var thisNote = (0, _jquery2.default)(e.target).parents("li");
+            thisNote.find(".note-title-field, .note-body-field").removeAttr("readonly").addClass("note-active-field");
+            thisNote.find(".update-note").addClass("update-note--visible");
         }
     }]);
 
