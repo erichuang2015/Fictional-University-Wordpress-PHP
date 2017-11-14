@@ -10568,6 +10568,7 @@ var MyNotes = function () {
             (0, _jquery2.default)(".delete-note").on("click", this.deleteNote);
             (0, _jquery2.default)(".edit-note").on("click", this.editNote.bind(this));
             (0, _jquery2.default)(".update-note").on("click", this.updateNote.bind(this));
+            (0, _jquery2.default)(".submit-note").on("click", this.createNote.bind(this));
         }
 
         // Methods will go here
@@ -10585,6 +10586,36 @@ var MyNotes = function () {
                 type: 'DELETE',
                 success: function success(response) {
                     thisNote.slideUp();
+                    console.log("Congrats");
+                    console.log(response);
+                },
+                error: function error(response) {
+                    console.log("Sorry");
+                    console.log(response);
+                }
+            });
+        }
+    }, {
+        key: "createNote",
+        value: function createNote(e) {
+
+            var ourNewPost = {
+                'title': (0, _jquery2.default)(".new-note-title").val(),
+                'content': (0, _jquery2.default)(".new-note-body").val(),
+                'status': 'publish'
+            };
+
+            _jquery2.default.ajax({
+                beforeSend: function beforeSend(xhr) {
+                    xhr.setRequestHeader('X-WP-Nonce', universityData.nonce);
+                },
+                url: universityData.root_url + '/wp-json/wp/v2/note/',
+                type: 'POST',
+                data: ourNewPost,
+                success: function success(response) {
+                    (0, _jquery2.default)(".new-note-title, .new-note-body").val('');
+                    (0, _jquery2.default)('<li>Imagine real data here</li>').prependTo("#my-notes").hide().slideDown();
+
                     console.log("Congrats");
                     console.log(response);
                 },
