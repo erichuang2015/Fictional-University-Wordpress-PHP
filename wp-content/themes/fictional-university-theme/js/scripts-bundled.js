@@ -10565,9 +10565,9 @@ var MyNotes = function () {
     _createClass(MyNotes, [{
         key: "events",
         value: function events() {
-            (0, _jquery2.default)(".delete-note").on("click", this.deleteNote);
-            (0, _jquery2.default)(".edit-note").on("click", this.editNote.bind(this));
-            (0, _jquery2.default)(".update-note").on("click", this.updateNote.bind(this));
+            (0, _jquery2.default)("#my-notes").on("click", ".delete-note", this.deleteNote);
+            (0, _jquery2.default)("#my-notes").on("click", ".edit-note", this.editNote.bind(this));
+            (0, _jquery2.default)("#my-notes").on("click", ".update-note", this.updateNote.bind(this));
             (0, _jquery2.default)(".submit-note").on("click", this.createNote.bind(this));
         }
 
@@ -10614,7 +10614,7 @@ var MyNotes = function () {
                 data: ourNewPost,
                 success: function success(response) {
                     (0, _jquery2.default)(".new-note-title, .new-note-body").val('');
-                    (0, _jquery2.default)('<li>Imagine real data here</li>').prependTo("#my-notes").hide().slideDown();
+                    (0, _jquery2.default)("\n                    <li data-id=\"" + response.id + "\">\n\t\t\t\t\t\t<input readonly class=\"note-title-field\" value=\"" + response.title.raw + "\">\n\t\t\t\t\t\t<span class=\"edit-note\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> Edit</span>\n\t\t\t\t\t\t<span class=\"delete-note\"><i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i> Delete</span>\n\t\t\t\t\t\t<textarea readonly class=\"note-body-field\">" + response.content.raw + "</textarea>\n                        <span class=\"update-note btn btn--blue btn--small\"><i class=\"fa fa-arrow-right\" aria-hidden=\"true\"></i> Save</span>\n\n                    </li>\n                ").prependTo("#my-notes").hide().slideDown();
 
                     console.log("Congrats");
                     console.log(response);
