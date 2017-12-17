@@ -10588,6 +10588,9 @@ var MyNotes = function () {
                     thisNote.slideUp();
                     console.log("Congrats");
                     console.log(response);
+                    if (response.userNoteCount < 6) {
+                        (0, _jquery2.default)(".note-limit-message").removeClass("active");
+                    }
                 },
                 error: function error(response) {
                     console.log("Sorry");
@@ -10620,6 +10623,9 @@ var MyNotes = function () {
                     console.log(response);
                 },
                 error: function error(response) {
+                    if (response.responseText === "You have reached the maximum number of notes") {
+                        (0, _jquery2.default)(".note-limit-message").addClass("active");
+                    }
                     console.log("Sorry");
                     console.log(response);
                 }
